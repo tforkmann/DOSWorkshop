@@ -20,7 +20,8 @@ dotnet run
 
 Nun wollen wir unser App mit einem SQL Server ausstatten. 
 WOLLEN WIR DAS WIRKLICH? 
-:scream: :money:
+:scream: 
+:money:
 
 Wir wollen die mit Farmer die webApp veröffentlichen.
 Bitte passt die `Program.fs` Datei wie folgt an:
