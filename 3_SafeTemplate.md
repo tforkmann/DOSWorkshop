@@ -1,53 +1,9 @@
-# Real-time event visualization using F# and Fable
+# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
-## Prerequisites
-1. Visual Studio Code (running on Windows, Linux or MacOS)
-2. Ionide F# plugin (Ionide-fsharp) by Ionide
-3. Basic understanding of F#
-4. .NET Core version 5.0 or later
-5. Basic Azure Storage subscription
-
-
-## 1. Set up basic Azure Infrastructure with Farmer
-```bash
-mkdir infrastructure
-dotnet new console -lang F#
-dotnet new tool-manifest
-dotnet tool install paket
-dotnet paket init
-dotnet paket add Farmer
-```
-
-```fs
-open Farmer
-open Farmer.Builders
-open Farmer.WebApp
-let web = webApp {
-        name "DOSWorkshop"
-        operating_system Linux
-        sku Sku.B1
-        https_only
-        zip_deploy "deploy"
-    }
-let deployment = arm {
-    location Location.CanadaEast
-    add_resource web
-}
-
-deployment
-|> Deploy.execute "DOSWorkshop" Deploy.NoParameters
-|> ignore
-```
-```bash
-dotnet watch run
-```
-If successful build
-```bash
-dotnet run
-```
+# SafeTemplate
 
 ## 2. Scaffolding a project with SAFE template
-Now that we verified out tools, let's create an empty Fable project that we will incrementally enhance with features we need. The easiest is to use one of available scaffolding templates, and we will use SAFE template. Read more about SAFE Stack [here](https://safe-stack.github.io/). SAFE stands for Saturn-Azure-Fable-Elmish, but we will only be using SFE from its stack.
+Now that we verified out tools, let's create an empty Fable project that we will incrementally enhance with features we need. The easiest is to use one of available scaffolding templates, and we will use SAFE template. Read more about SAFE Stack [here](https://safe-stack.github.io/). SAFE stands for Saturn-Azure-Fable-Elmish, but we will only be using SFE from its st        ack.
 
 First install SAFE templates:
 ```
