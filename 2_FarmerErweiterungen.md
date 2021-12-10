@@ -55,3 +55,10 @@ dotnet run
 ## 4. Ausblick Farmer ContainerApps
 
 * [ContainerApps](http://www.navision-blog.de/blog/2021/12/06/santa-and-the-container-apps-in-the-cloud/) Santa und die ContainerApps in der Cloud
+
+### Hintergrund
+- Entkopplung von Background Prozessen mit ContainerApps
+- Ausflug Miro....
+- Vorteil ist das Container Apps gut skalieren, aber auch komplett komplett auf null runter gefahren werden
+- Steffen führt das in seinen F#Advent genauer aus
+- Kombination von ContainerApps mit SAFE Stack Apps wird kommen
