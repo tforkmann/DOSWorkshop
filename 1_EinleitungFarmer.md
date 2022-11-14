@@ -1,13 +1,13 @@
-# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
+# 18.11.2022 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
-# Einleitung Farmer 
+# Einleitung Farmer
 
 ## Voraussetzungen
 1. Visual Studio Code (Windows, Linux oder MacOS)
 2. Ionide F# plugin (Ionide-fsharp) by Ionide
 3. Grundlegendes Verständnis von F#
-4. .NET Core version 5.0 oder später
-5. Einfaches Azure Abonnement 
+4. .NET Core version 6.0 oder später
+5. Einfaches Azure Abonnement
 
 ## Wichtig: Tipps und Tricks mit Ionide
 
@@ -34,7 +34,7 @@ dotnet paket init
 dotnet paket add Farmer
 ```
 
-Wir wollen die mit Farmer die webApp veröffentlichen.
+Wir wollen nun mit Farmer die webApp veröffentlichen.
 Bitte passt die `Program.fs` Datei wie folgt an:
 
 ```fs
@@ -58,7 +58,7 @@ deployment
 |> ignore
 ```
 
-Nun überprüfen wird ob die Konsolenanwendung korrekt kompiliert wurde.
+Nun überprüfen wir ob die Konsolenanwendung korrekt kompiliert wurde.
 Führt bitte folgenden Befehl aus:
 
 ```bash
@@ -72,4 +72,5 @@ dotnet run
 ```
 
 Bitte öffnet nun das Azure Portal und überprüft ob die WebApp korrekt angezeigt wird.
+
 Herzlichen Glückwunsch Ihr habe Eure erste Azure Cloud Infrastruktur mit Farmer erstellt.

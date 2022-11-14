@@ -1,10 +1,10 @@
-# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
+# 18.11.2022 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
 # Einleitung AzureTackle
 
 ## 1. Warum AzureTackle
 
-* Azure Tabelle sind verdammt billig, aber nicht so leicht zu handhaben
+* Azure Tabellen sind verdammt billig, aber nicht so leicht zu handhaben
 * WindowsAzure SKD ist relative umständlich
 * inspiriert von [DustyTables](https://github.com/Zaid-Ajaj/DustyTables)
 * vereinfachter Azure Table Zugang
@@ -45,7 +45,7 @@ type AzureFilter =
 | Txt of string * Operator * string
 | Dtm of string * Operator * DateTime
 | DtmO of string * Operator * DateTimeOffset
-| PaKey of Operator * string 
+| PaKey of Operator * string
 | RoKey of Operator * string
 | TStmp of Operator * DateTimeOffset
 ```

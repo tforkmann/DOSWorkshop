@@ -1,4 +1,4 @@
-# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
+# 18.11.2022 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
 # Implementierung AzureTackle und Feliz.Daisy
 
@@ -35,13 +35,13 @@ let azureProps = AzureTable.connect connectionString()
 
 Im Anschluss müssen noch die  `Infrastructure.fs` und `appsettings.json` ins `Server.fsproj` Projekt hinzugefügt werden.
 
-Die Projektdatei sollte dann wie folgt aussehen: 
+Die Projektdatei sollte dann wie folgt aussehen:
 ```fs
     <?xml version="1.0" encoding="utf-8"?>
     <Project Sdk="Microsoft.NET.Sdk.Web">
         <PropertyGroup>
             <OutputType>Exe</OutputType>
-            <TargetFramework>net5.0</TargetFramework>
+            <TargetFramework>net6.0</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
             <None Include="paket.references" />
@@ -97,7 +97,7 @@ open FSharp.Control.Tasks.ContextInsensitive
 module Add =
     let saveContractInfo (contractInfo: ContactInfo) =
         try
-            printfn "contractInfo %A" contractInfo
+            // printfn "contractInfo %A" contractInfo
 
             let rowKey =
                 contractInfo.ContactDate.DateTime
@@ -179,11 +179,14 @@ module Get =
 let dosAzureTackleApi =
     { AddContactInfo = ContactInfo.Add.addContractInfo
       GetContactInfos = ContactInfo.Get.contacts}
-```      
-Hurry Server Seite check! :party:
+```
+
+Server Seite check! :party:
+
 6. Jetzt in `src/Client` muss die Client Seite angepasst werden.
 Anpassung der Index.fs wie folgt:
-7. Anpassung Model: 
+
+7. Anpassung Model:
 ```fs
 type Model = { ContactInfos: ContactInfo [];ContactInfo: ContactInfo ; Error : exn option }
 ```

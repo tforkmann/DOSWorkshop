@@ -1,4 +1,4 @@
-# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
+# 18.11.2022 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
 # SAFE-Stack, erste SAFE-Stack app, Fable-Remoting
 
@@ -16,7 +16,7 @@ Vorteile vom SAFE Stack:
 - einfache und schnelle Webentwicklung
 - baut auf Industrie Standards auf
 - extrem Produktiv
-- Server, Client typen sind miteinander gekoppelt
+- Server, Client Typen sind miteinander gekoppelt
 - Type-sicher
 - leicht anpassungsfähig
 - Cloud-ready
@@ -32,6 +32,7 @@ dotnet new -i SAFE.Template
 ```
 
 Als nächstes erstellen wir ein SAFE-Stack Projekt mit dem Namen `DOSWorkshop`
+
 ```bash
 dotnet new SAFE -o DOSWorkshop
 ```

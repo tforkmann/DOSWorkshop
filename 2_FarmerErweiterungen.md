@@ -1,10 +1,10 @@
-# 9.12.2021 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
+# 18.11.2022 DevOpenSpace - Workshop - Farmer und AzureTackle - Azure Cloud Data Operations
 
-# Farmer Erweiterungen, Ausblick Container Apps 
+# Farmer Erweiterungen, Ausblick Container Apps
 
 ## 1. Storage Account erstellen
 
-- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eines neuen Storage Accounts. 
+- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eines neuen Storage Accounts.
 - bitte fügt in die StorageAccountConfig ein Storage Type eurer Wahl hinzu.
 - bitte fügt 2 Tabellen und 2 Queues hinzu.
 - bitte fügt die Storage Account Ressource in die `arm` CE hinzu.
@@ -16,15 +16,15 @@ dotnet run
 
 ## 2. SQL Server hinzufügen
 
-Nun wollen wir unser App mit einem SQL Server ausstatten. 
-WOLLEN WIR DAS WIRKLICH? 
-:scream: 
+Nun wollen wir unser App mit einem SQL Server ausstatten.
+WOLLEN WIR DAS WIRKLICH?
+:scream:
 :moneybag:
 
-- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eine neuen Sql Servers. 
+- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eine neuen Sql Servers.
 - bitte fügt einen Admin hinzu
 - bitte fügt eine Firewall hinzu
-- dann können wir unsere Datenbanken anlegen: 
+- dann können wir unsere Datenbanken anlegen:
 
 ```fs
 add_databases [
