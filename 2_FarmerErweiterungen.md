@@ -4,7 +4,7 @@
 
 ## 1. Storage Account erstellen
 
-- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eines neuen Storage Accounts.
+- bitte ergänzt die `Program.fs` um eine neue Computational Expression (CE) für die Erstellung eines neuen Storage Accounts `storageAccount {}`.
 - bitte fügt in die StorageAccountConfig ein Storage Type eurer Wahl hinzu.
 - bitte fügt 2 Tabellen und 2 Queues hinzu.
 - bitte fügt die Storage Account Ressource in die `arm` CE hinzu.
